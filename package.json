@@ -33,7 +33,7 @@
     "sass-loader": "^13.2.0",
     "webpack": "^5.76.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.0.0-rc.1"
   },
   "dependencies": {
     "core-js": "^3.29.0",
