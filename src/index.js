@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "./assets/styles/index.css";
 import stepsSrc from "./images/steps.png";
 
 const numbers = [2, 3, 5];
