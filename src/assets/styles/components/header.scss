@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+
+  &__title {
+    text-align: center;
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+  }
+}
