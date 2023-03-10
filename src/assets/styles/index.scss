@@ -1,6 +1,7 @@
-$body-color: red;
-
-body {
-  color: $body-color;
-  background-color: black;
-}
+@use "vendor/normalize.scss";
+@use "components/shared.scss";
+@use "components/container.scss";
+@use "components/header.scss";
+@use "components/main.scss";
+@use "components/coordinates.scss";
+@use "components/background.scss";

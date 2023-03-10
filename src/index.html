@@ -5,22 +5,31 @@
     <title>Tati Garrafa's resume</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="" alt="Logo" />
-      </div>
-      <div>
-        <h1>Tati Garrafa's Resume</h1>
-        <h2>Web integration / Frontend developer</h2>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div>Profile</div>
-        <div>Conect</div>
-        <div>Contact</div>
-      </section>
-      <section></section>
-    </main>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="<%=require('./assets/images/logo.svg')%>"
+            alt="Logo Tati Garrafa"
+          />
+        </div>
+        <div class="header__title">
+          <h1>Tati Garrafa's Resume</h1>
+          <h2>Web integration / Frontend developer</h2>
+        </div>
+      </header>
+      <main>
+        <section class="coordinates">
+          <div>Profile</div>
+          <div>Conect</div>
+          <div>Contact</div>
+        </section>
+        <section class="background">
+          <div>Timeline experiencia</div>
+          <div>education</div>
+          <div>skills</div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
