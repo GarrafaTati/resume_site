@@ -2,10 +2,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 1rem;
   padding: 20px 0;
+
+  &__logo {
+    flex: 1 2 30%;
+  }
 
   &__title {
     text-align: center;
+    flex: 1 2 70%;
 
     h1,
     h2 {
