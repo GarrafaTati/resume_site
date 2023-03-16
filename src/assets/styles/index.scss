@@ -1,5 +1,6 @@
 @use "vendor/normalize.scss";
-@use "components/shared.scss";
+@use "base/typo";
+@use "base/shared";
 @use "components/container.scss";
 @use "components/header.scss";
 @use "components/main.scss";

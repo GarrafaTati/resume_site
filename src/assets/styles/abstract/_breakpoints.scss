@@ -1,0 +1,19 @@
+// Extra Small (mobile)
+$below-sm: "max-width:575px";
+$above-sm: "min-width:576px";
+// Small (tablet)
+$below-md: "max-width:767px";
+$above-md: "min-width:768px";
+// Medium (landscape tablet)
+$below-lg: "max-width:991px";
+$above-lg: "min-width:992px";
+// Large (content max-width)
+$below-xl: "max-width:1199px";
+$above-xl: "min-width:1200px";
+// Large (content max-width)
+$below-xxl: "max-width:1399px";
+$above-xxl: "min-width:1400px";
+//othes
+$portrait: "orientation: portrait";
+$landscape: "orientation: landscape";
+$retina: "min-resolution: 192dpi";

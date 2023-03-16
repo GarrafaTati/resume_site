@@ -1,0 +1,12 @@
+$z_indexIhtml: (
+  zIndexNeg1: -1,
+  zIndex0: 0,
+  zIndex1: 1,
+  zIndex5: 5,
+  zIndex10: 10,
+  zIndex100: 100,
+  zIndex200: 200,
+  zIndex500: 500,
+  zIndex1000: 1000,
+);
+//z-index: map-get(variables.$z_indexIhtml, zIndex100);

@@ -1,0 +1,46 @@
+/* P O S I T I O N */
+@mixin center($position) {
+  position: absolute;
+  @if $position== "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $position== "horizontal" {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $position== "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* B O R D E R */
+@mixin bordered($direction, $width, $style, $color) {
+  @if $direction== "all" {
+    border: $width $style $color;
+  } @else {
+    border-#{$direction}: $width $style $color;
+  }
+}
+
+/* B O R D E R   R A D I U S */
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+/* S H A D O W */
+@mixin boxShadow($shadow1, $shadow2: false) {
+  $params: $shadow1;
+  @if $shadow2 {
+    $params: $shadow1, $shadow2;
+  }
+  box-shadow: $params;
+}
+
+@mixin hoverButton {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
