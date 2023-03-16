@@ -1,0 +1,104 @@
+@use "animation.scss"; // colors
+$background-color: #1a1a1a;
+$progressbar-title-color: #fff;
+
+$red: #c0392b;
+$blue: #1199ff;
+$purple: #9b59b6;
+$orange: #ffa500;
+$green: #27ae60;
+
+$animation-delay: 0.5s;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.skills {
+  display: flex;
+  gap: 20px;
+  > div {
+    width: 50%;
+  }
+}
+
+.skills__item {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 40px;
+}
+
+.skills__text {
+  color: black;
+
+  .skills__title {
+    display: inline-block;
+  }
+  .skills__percentage {
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.progress {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-top: 5px;
+  display: block;
+  @include border-radius(5px);
+}
+
+.progress-bar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: $red;
+  @include border-radius(5px);
+
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.w-95 {
+  -webkit-animation-name: w-95;
+  animation-name: w-95;
+  -webkit-animation-delay: $animation-delay;
+  animation-delay: $animation-delay;
+}
+
+.w-75 {
+  -webkit-animation-name: w-75;
+  animation-name: w-75;
+  -webkit-animation-delay: $animation-delay * 4;
+  animation-delay: $animation-delay * 4;
+}
+
+.w-90 {
+  -webkit-animation-name: w-90;
+  animation-name: w-90;
+  -webkit-animation-delay: $animation-delay * 2;
+  animation-delay: $animation-delay * 2;
+}
+
+.w-80 {
+  -webkit-animation-name: w-80;
+  animation-name: w-80;
+  -webkit-animation-delay: $animation-delay * 3;
+  animation-delay: $animation-delay * 3;
+}
+
+.w-70 {
+  -webkit-animation-name: w-70;
+  animation-name: w-70;
+  -webkit-animation-delay: $animation-delay * 5;
+  animation-delay: $animation-delay * 5;
+}
