@@ -1,1 +1,51 @@
 @use "../abstract/" as a;
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: a.$ff-Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  font-family: a.$ff-Poppins;
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: a.$bold-weight;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: a.$bold-weight;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: a.$bold-weight;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: a.$light-weight;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
