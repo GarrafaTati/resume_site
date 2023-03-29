@@ -1,0 +1,26 @@
+.skills {
+  display: flex;
+  gap: 20px;
+  > div {
+    width: 50%;
+  }
+}
+
+.skills__item {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 40px;
+}
+
+.skills__text {
+  color: black;
+
+  .skills__title {
+    display: inline-block;
+  }
+  .skills__percentage {
+    position: absolute;
+    right: 5px;
+  }
+}

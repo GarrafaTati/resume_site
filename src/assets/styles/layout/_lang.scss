@@ -1,0 +1,18 @@
+@use "../abstract/" as a;
+.lang__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.inView {
+  }
+}
+.circular-progress {
+  .value-container {
+    position: relative;
+    font-family: a.$ff-Poppins;
+    font-size: 3rem;
+    font-weight: a.$bold-weight;
+    color: #231c3d;
+  }
+}

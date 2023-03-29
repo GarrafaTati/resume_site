@@ -1,10 +1,13 @@
 @use "vendor/normalize.scss";
 @use "base/typo";
 @use "base/shared";
-@use "components/container";
+@use "base/animation";
+@use "layout/container";
+@use "layout/main";
+@use "layout/skills";
+@use "layout/lang";
 @use "components/header";
-@use "components/main";
 @use "components/coordinates";
 @use "components/background";
 @use "components/timeline";
-@use "components/skills";
+@use "components/progress-bar";
