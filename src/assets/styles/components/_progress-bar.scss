@@ -1,0 +1,118 @@
+@use "../abstract/" as a;
+
+$red: #c0392b;
+$gray: #555;
+
+$animation-delay: 0.5s;
+
+.progress-content {
+  &.inView {
+    .progress-bar {
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background-color: $red;
+      border-radius: 5px;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      &.w-95 {
+        -webkit-animation-name: w-95;
+        animation-name: w-95;
+        -webkit-animation-delay: $animation-delay;
+        animation-delay: $animation-delay;
+      }
+
+      &.w-75 {
+        -webkit-animation-name: w-75;
+        animation-name: w-75;
+        -webkit-animation-delay: $animation-delay * 4;
+        animation-delay: $animation-delay * 4;
+      }
+
+      &.w-90 {
+        -webkit-animation-name: w-90;
+        animation-name: w-90;
+        -webkit-animation-delay: $animation-delay * 2;
+        animation-delay: $animation-delay * 2;
+      }
+
+      &.w-80 {
+        -webkit-animation-name: w-80;
+        animation-name: w-80;
+        -webkit-animation-delay: $animation-delay * 3;
+        animation-delay: $animation-delay * 3;
+      }
+
+      &.w-70 {
+        -webkit-animation-name: w-70;
+        animation-name: w-70;
+        -webkit-animation-delay: $animation-delay * 5;
+        animation-delay: $animation-delay * 5;
+      }
+    }
+  }
+}
+
+.progress {
+  background: $gray;
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin-top: 5px;
+  display: block;
+  @include a.rounded(5px);
+
+  &__container {
+    position: relative;
+  }
+
+  &__circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: block;
+
+    circle {
+      display: block;
+      width: 150px;
+      height: 150px;
+      fill: none;
+      stroke: black;
+      stroke-width: 10px;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      transform: translate(5px, 5px);
+
+      &:first-child {
+        stroke-dashoffset: 0;
+        stroke: $gray;
+      }
+
+      &.svg_circle {
+        stroke: $red;
+
+        &--pt {
+          transition: stroke-dashoffset 1.4s;
+        }
+
+        &--fr {
+          transition: stroke-dashoffset 1s;
+        }
+
+        &--en {
+          transition: stroke-dashoffset 1.2s;
+        }
+      }
+    }
+  }
+}
+
+.value-container {
+  @include a.center(both);
+  font-size: 2rem;
+  font-weight: a.$medium-weight;
+}

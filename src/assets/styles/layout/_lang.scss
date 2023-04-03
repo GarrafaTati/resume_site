@@ -3,16 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
-  &.inView {
-  }
-}
-.circular-progress {
-  .value-container {
-    position: relative;
-    font-family: a.$ff-Poppins;
-    font-size: 3rem;
-    font-weight: a.$bold-weight;
-    color: #231c3d;
+  h4 {
+    text-align: center;
+    margin: 10px 0;
   }
 }
