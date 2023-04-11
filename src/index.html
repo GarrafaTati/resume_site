@@ -43,14 +43,50 @@
           </div>
           <div>
             <h3 class="title">Conect</h3>
-            <div>
-              <span>LinkedIn</span>
-              <span>GitHub</span>
+            <div class="wrapper__icon">
+              <span class="icon icon--linkedin">
+                <a
+                  href="https://www.linkedin.com/in/tatiana-garrafa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                >
+                  <img
+                    src="<%=require('./assets/images/linkedin.svg')%>"
+                    alt="LinkedIn Tatiana Garrafa"
+                  />
+                </a>
+              </span>
+              <span class="icon icon--github">
+                <a
+                  href="https://github.com/GarrafaTati"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Github"
+                >
+                  <img
+                    src="<%=require('./assets/images/github.svg')%>"
+                    alt="Github Tat Garrafa"
+                  />
+                </a>
+              </span>
             </div>
           </div>
           <div>
             <h3 class="title">Contact</h3>
-            <span>e-mail</span>
+            <span class="icon icon--email">
+              <a
+                href="mailto:tatiigarrafa@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Send me an e-mail"
+              >
+                <img
+                  src="<%=require('./assets/images/envelope.svg')%>"
+                  alt="Send me an e-mail"
+                />
+              </a>
+            </span>
           </div>
         </section>
         <section class="background">
@@ -61,9 +97,12 @@
                 <div class="timeline__items">
                   <div class="timeline__item">
                     <div class="timeline__content">
-                      <h3>Web integrator</h3>
-                      <h4>Sextans Internet inc., Qc</h4>
-                      <h5>January 2022 - Present</h5>
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Sextans Internet inc., Qc</h4>
+                        <h5>January 2022 - Present</h5>
+                      </header>
+
                       <p>
                         Integration, programming and production web, multimedia,
                         Internet and all tasks related to interactive projects
@@ -77,9 +116,12 @@
                   </div>
                   <div class="timeline__item">
                     <div class="timeline__content">
-                      <h3>Web integrator</h3>
-                      <h4>Chenelière Éducation, Qc</h4>
-                      <h5>July 2019</h5>
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Chenelière Éducation, Qc</h4>
+                        <h5>July 2019</h5>
+                      </header>
+
                       <p>
                         Integration and management of content on the digital
                         platform using HTML5, CSS3, SASS, JS, React and Angular
@@ -88,9 +130,11 @@
                   </div>
                   <div class="timeline__item">
                     <div class="timeline__content">
-                      <h3>Front end integrator</h3>
-                      <h4>Reitmans Canada, Qc</h4>
-                      <h5>October 2018</h5>
+                      <header>
+                        <h3>Front end integrator</h3>
+                        <h4>Reitmans Canada, Qc</h4>
+                        <h5>October 2018</h5>
+                      </header>
                       <p>
                         Content integration into the CMS (Salesforce CMS).
                         Optimization of the website experience by following the
@@ -103,9 +147,11 @@
                   </div>
                   <div class="timeline__item">
                     <div class="timeline__content">
-                      <h3>Web integrator</h3>
-                      <h4>Tobo Studio, Qc</h4>
-                      <h5>April 2017</h5>
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Tobo Studio, Qc</h4>
+                        <h5>April 2017</h5>
+                      </header>
                       <p>
                         Integration of websites in WordPress, preparation and
                         optimization assets (visuals, sounds, animations, etc.),
@@ -119,7 +165,18 @@
             </div>
           </div>
           <div class="background__education">
-            <h3 class="title">Professional education</h3>
+            <h3 class="title">Education</h3>
+            <div class="wrapper__education">
+              <div class="education__item">
+                <div class="item__local">Practicum Brasil</div>
+                <div class="item__name">Web developemet Bootcamp</div>
+                <div class="item__date">Septembr 2022 - March 2023</div>
+                <div class="item__description">
+                  Completed 70% of this course. Improvement of HTML5, CSS3,
+                  Methodologie BEM, GitHub and JavaScript.
+                </div>
+              </div>
+            </div>
           </div>
           <div class="background__skills">
             <h3 class="title">Technical skills</h3>
@@ -186,7 +243,7 @@
             </div>
           </div>
           <div class="lang progress-content">
-            <h3>Language</h3>
+            <h3 class="title">Language</h3>
             <div class="lang__container">
               <div>
                 <h4>Portuguese</h4>
