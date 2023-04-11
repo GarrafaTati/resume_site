@@ -1,17 +1,6 @@
 .timeline {
   box-sizing: border-box;
   position: relative;
-  // &:not(.timeline--horizontal)::before {
-  //   background-color: #ddd;
-  //   bottom: 0;
-  //   content: "";
-  //   left: 50%;
-  //   margin-left: -2px;
-  //   position: absolute;
-  //   top: 0;
-  //   width: 4px;
-  //   z-index: 1;
-  // }
 
   &__wrap {
     overflow: hidden;
@@ -47,34 +36,6 @@
       animation-name: fadeIn;
     }
   }
-
-  // &__item--right {
-  //   left: 50%;
-  //   padding: 10px 0 10px 40px;
-  //   &::after {
-  //     left: -10px;
-  //   }
-  //   .timeline__content {
-  //     &::before {
-  //       border-bottom: 10px solid transparent;
-  //       border-right: 12px solid #ccc;
-  //       border-left: none;
-  //       border-top: 10px solid transparent;
-  //       left: -12px;
-  //     }
-  //     &::after {
-  //       border-bottom: 9px solid transparent;
-  //       border-right: 11px solid #fff;
-  //       border-left: none;
-  //       border-top: 9px solid transparent;
-  //       left: -10px;
-  //     }
-  //   }
-  // }
-
-  // &__item--left {
-  //   left: 0;
-  // }
 
   &__content {
     background-color: #fff;
