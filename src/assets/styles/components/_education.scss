@@ -1,0 +1,28 @@
+.education__item {
+  display: grid;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+.item {
+  &__local {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  &__name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  &__date {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+    text-align: right;
+  }
+}
