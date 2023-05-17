@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
   if (isScrolledIntoView(langContainer)) {
     circlePt.style.strokeDashoffset = 0;
     circleFr.style.strokeDashoffset = 22;
-    circleEn.style.strokeDashoffset = 66;
+    circleEn.style.strokeDashoffset = 44;
   } else {
     circlePt.style.strokeDashoffset = 440;
     circleFr.style.strokeDashoffset = 440;

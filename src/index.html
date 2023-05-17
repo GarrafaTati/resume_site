@@ -20,7 +20,7 @@
       </header>
       <main>
         <section class="coordinates">
-          <div>
+          <div class="wrapper">
             <h3 class="title">Profile</h3>
             <p>
               As a web developer, I am constantly investing in my professional
@@ -41,7 +41,7 @@
               dynamic, where I can feel motivated to further my career.
             </p>
           </div>
-          <div>
+          <div class="wrapper">
             <h3 class="title">Conect</h3>
             <div class="wrapper__icon">
               <span class="icon icon--linkedin">
@@ -72,7 +72,7 @@
               </span>
             </div>
           </div>
-          <div>
+          <div class="wrapper">
             <h3 class="title">Contact</h3>
             <span class="icon icon--email">
               <a
@@ -88,111 +88,41 @@
               </a>
             </span>
           </div>
+          <div class="wrapper">
+            <a
+              href="<%=require('./assets/pdf/cvTatianaGarrafa_en.pdf')%>"
+              target="_blank"
+              class="btn-circle-download"
+            >
+              <span class="btn__icon">
+                <svg
+                  id="arrow"
+                  width="14px"
+                  height="20px"
+                  viewBox="17 14 14 20"
+                >
+                  <path d="M24,15 L24,32"></path>
+                  <polyline points="30 27 24 33 18 27"></polyline>
+                </svg>
+                <svg
+                  id="check"
+                  width="21px"
+                  height="15px"
+                  viewBox="13 17 21 15"
+                >
+                  <polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
+                </svg>
+                <svg id="border" width="48px" height="48px" viewBox="0 0 48 48">
+                  <path
+                    d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="btn__txt">Donwload the CV</span>
+            </a>
+          </div>
         </section>
         <section class="background">
-          <div class="background__professional">
-            <h3 class="title">Professional experience</h3>
-            <div class="timeline">
-              <div class="timeline__wrap">
-                <div class="timeline__items">
-                  <div class="timeline__item">
-                    <div class="timeline__content">
-                      <header>
-                        <h3>Web integrator</h3>
-                        <h4>Sextans Internet inc., Qc</h4>
-                        <h5>January 2022 - Present</h5>
-                      </header>
-
-                      <p>
-                        Integration, programming and production web, multimedia,
-                        Internet and all tasks related to interactive projects
-                        such as website, mobile application, multimedia
-                        presentation, newsletter, etc. Using WordPress, PHP,
-                        HTML 5, CSS 3, SASS, Angular, Javascript / JQuery.
-                        Newsletter integration. Image preparation and
-                        optimization
-                      </p>
-                    </div>
-                  </div>
-                  <div class="timeline__item">
-                    <div class="timeline__content">
-                      <header>
-                        <h3>Web integrator</h3>
-                        <h4>Chenelière Éducation, Qc</h4>
-                        <h5>July 2019</h5>
-                      </header>
-
-                      <p>
-                        Integration and management of content on the digital
-                        platform using HTML5, CSS3, SASS, JS, React and Angular
-                      </p>
-                    </div>
-                  </div>
-                  <div class="timeline__item">
-                    <div class="timeline__content">
-                      <header>
-                        <h3>Front end integrator</h3>
-                        <h4>Reitmans Canada, Qc</h4>
-                        <h5>October 2018</h5>
-                      </header>
-                      <p>
-                        Content integration into the CMS (Salesforce CMS).
-                        Optimization of the website experience by following the
-                        best user guidelines. Responsible for daily quality
-                        control confirming the website is free of errors. QA
-                        Test on browsers and multiple devices. Email marketing
-                        integration.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="timeline__item">
-                    <div class="timeline__content">
-                      <header>
-                        <h3>Web integrator</h3>
-                        <h4>Tobo Studio, Qc</h4>
-                        <h5>April 2017</h5>
-                      </header>
-                      <p>
-                        Integration of websites in WordPress, preparation and
-                        optimization assets (visuals, sounds, animations, etc.),
-                        integrate the styles for web and mobile applications
-                        through the use of recent technologies like SASS
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="background__education">
-            <h3 class="title">Education</h3>
-            <div class="wrapper__education">
-              <div class="education__item">
-                <div class="item__local">Practicum Brasil, Brasil</div>
-                <div class="item__name">Web developemet Bootcamp</div>
-                <div class="item__date">September 2022 -<br />March 2023</div>
-              </div>
-              <div class="education__item">
-                <div class="item__local">Maisonneuve College, Québec</div>
-                <div class="item__name">Multimedia Integration Techniques</div>
-                <div class="item__date">May 2015 -<br />June 2017</div>
-              </div>
-              <div class="education__item">
-                <div class="item__local">Senac University Center, Brazill</div>
-                <div class="item__name">Web Management</div>
-                <div class="item__date">August 2011 -<br />December 2012</div>
-              </div>
-              <div class="education__item">
-                <div class="item__local">
-                  Anhembi Morumbi University, Brazil
-                </div>
-                <div class="item__name">
-                  Communication - Specialty in Radio and TV
-                </div>
-                <div class="item__date">February 2002 -<br />December 2005</div>
-              </div>
-            </div>
-          </div>
           <div class="background__skills">
             <h3 class="title">Technical skills</h3>
 
@@ -307,8 +237,102 @@
                       r="70"
                     />
                   </svg>
-                  <div class="value-container">85%</div>
+                  <div class="value-container">90%</div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="background__professional">
+            <h3 class="title">Professional experience</h3>
+            <div class="timeline">
+              <div class="timeline__wrap">
+                <div class="timeline__items">
+                  <div class="timeline__item">
+                    <div class="timeline__content">
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Sextans Internet inc., Qc</h4>
+                        <h5>January 2022 - April 2023</h5>
+                      </header>
+
+                      <p>
+                        All tasks related to interactive projects such as
+                        website, mobile application, multimedia presentation,
+                        newsletter, etc. Using WordPress, PHP, HTML 5, CSS 3,
+                        SASS, Angular, Javascript / JQuery. Newsletter
+                        integration. Image preparation and optimization.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline__item">
+                    <div class="timeline__content">
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Chenelière Éducation, Qc</h4>
+                        <h5>July 2019 - January 2022</h5>
+                      </header>
+
+                      <p>
+                        Integration and management of content on the digital
+                        platform using HTML5, CSS3, SASS, JS, React and Angular.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline__item">
+                    <div class="timeline__content">
+                      <header>
+                        <h3>Front end integrator</h3>
+                        <h4>Reitmans Canada, Qc</h4>
+                        <h5>October 2018 - July 2019</h5>
+                      </header>
+                      <p>
+                        Content integration into the CMS (Salesforce CMS),
+                        optimization of the website experience, e-mail marketing
+                        integration
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline__item">
+                    <div class="timeline__content">
+                      <header>
+                        <h3>Web integrator</h3>
+                        <h4>Tobo Studio, Qc</h4>
+                        <h5>April 2017 - October 2018</h5>
+                      </header>
+                      <p>
+                        Integration of websites in WordPress, preparation and
+                        optimization assets (visuals, sounds, animations, etc.),
+                        integrate the styles for web and mobile applications
+                        through the use of recent technologies like SASS
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background__education">
+            <h3 class="title">Education</h3>
+            <div class="wrapper__education">
+              <div class="education__item">
+                <div class="item__name">Web developemet Bootcamp | 2022</div>
+                <div class="item__local">Practicum</div>
+              </div>
+              <div class="education__item">
+                <div class="item__name">
+                  Multimedia Integration Techniques | 2015
+                </div>
+                <div class="item__local">Maisonneuve College</div>
+              </div>
+              <div class="education__item">
+                <div class="item__name">Web Management | 2011</div>
+                <div class="item__local">Senac University Center</div>
+              </div>
+              <div class="education__item">
+                <div class="item__name">
+                  Communication - Specialty in Radio and TV | 2002
+                </div>
+                <div class="item__local">Anhembi Morumbi University</div>
               </div>
             </div>
           </div>
