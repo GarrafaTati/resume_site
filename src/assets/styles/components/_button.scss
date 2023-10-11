@@ -1,139 +1,44 @@
-$color: #c0392b;
-.btn-circle-download {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  .btn__icon {
-    position: relative;
-    height: 48px;
-    width: 48px;
-    margin-right: 15px;
-    border-radius: 100%;
-    background: #e8eaed;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.2s ease;
-    &::after {
-      content: "";
-      position: relative;
-      display: block;
-      width: 200%;
-      height: 100%;
-      background-image: linear-gradient(
-        100deg,
-        rgba(white, 0),
-        rgba(white, 0.25),
-        rgba(white, 0)
-      );
-      transform: translateX(-100%);
-    }
+@use "../abstract/" as a;
 
-    svg {
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: none;
-      &#border {
-        position: absolute;
-        top: 0;
-        left: 0;
-        stroke: none;
-        stroke-dasharray: 144;
-        stroke-dashoffset: 144;
-        transition: all 0.9s linear;
-      }
-      &#arrow {
-        position: absolute;
-        top: 14px;
-        left: 17px;
-        stroke: #9098a9;
-        transition: all 0.2s ease;
-      }
-      &#check {
-        position: absolute;
-        top: 17px;
-        left: 13px;
-        stroke: white;
-        transform: scale(0);
-      }
-    }
-
-    &.load {
-      background: rgba($color, 0.2);
-      #arrow {
-        path,
-        polyline {
-          stroke: $color;
-        }
-      }
-
-      #border {
-        stroke: $color;
-        stroke-dasharray: 144;
-        stroke-dashoffset: 0;
-      }
-    }
-    &.done {
-      background: $color;
-      animation: rubberBand 0.8s;
-      -webkit-animation: rubberBand 0.8s;
-
-      &::after {
-        transform: translateX(50%);
-        transition: transform 0.4sease;
-        transition-delay: 0.7s;
-      }
-
-      #border,
-      #arrow {
-        display: none;
-      }
-      #check {
-        transform: scale(1);
-        transition: all 0.2s ease;
-        transition-delay: 0.2s;
-      }
-    }
-  }
-  &:hover {
-    color: $color;
-    .btn__icon {
-      background: rgba($color, 0.2);
-      #arrow,
-      path,
-      polyline {
-        stroke: $color;
-      }
-    }
-  }
+.buttons {
+  margin-top: 2rem;
 }
+.btn {
+  display: inline-block;
+  padding: 1rem 3.7rem;
+  line-height: 1.2;
+  border: 0;
+  outline: 0;
+  border: 2px solid a.$primary-color;
+  color: #222;
+  text-shadow: none;
+  border-radius: 30px;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &--download {
+    background-color: #fff;
+    margin-right: 1rem;
 
-@keyframes rubberBand {
-  from {
-    transform: scale(1, 1, 1);
+    &:hover,
+    &:focus {
+      background-color: a.$primary-color;
+    }
   }
 
-  30% {
-    transform: scale3d(1.15, 0.75, 1);
-  }
+  &--hire {
+    color: #333;
+    border-color: #d5d5d5;
+    background-color: #d5d5d5;
 
-  40% {
-    transform: scale3d(0.75, 1.15, 1);
-  }
-
-  50% {
-    transform: scale3d(1.1, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #545b62;
+      border-color: #4e555b;
+    }
   }
 }

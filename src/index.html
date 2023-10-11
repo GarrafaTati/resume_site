@@ -5,17 +5,18 @@
     <title>Tati Garrafa's resume</title>
   </head>
   <body>
+    <div class="bg"></div>
     <div class="container">
       <header class="header">
-        <div class="header__logo">
-          <img
-            src="<%=require('./assets/images/logo.svg')%>"
-            alt="Logo Tati Garrafa"
-          />
-        </div>
         <div class="header__title">
           <h1>Tati Garrafa's Resume</h1>
-          <h2>Web integration / Frontend developer</h2>
+          <h2>Web integration<br />Frontend developer</h2>
+          <div class="buttons">
+            <a href="<%=require('./assets/pdf/cvTatianaGarrafa_en.pdf')%>" target="_blank" class="btn btn--download">
+              <span class="btn__txt">Donwload CV</span>
+            </a>
+            <a href="mailto:tatiigarrafa@gmail.com" class="btn btn--hire">Hire me</a>
+          </div>
         </div>
       </header>
       <main>
@@ -23,51 +24,29 @@
           <div class="wrapper">
             <h3 class="title">Profile</h3>
             <p>
-              As a web developer, I am constantly investing in my professional
-              development, I am expanding my knowledge and skills to better
-              perform my job. Currently I work in Montreal as a Web Integrador
-              providing services for our clients, and in parallel I also do
-              freelance work.
+              As a web developer, I am constantly investing in my professional development, I am expanding my knowledge and skills to better perform my job. Currently I work in Montreal as a Web
+              Integrador providing services for our clients, and in parallel I also do freelance work.
             </p>
             <p>
-              I have extensive knowledge of HTML5, CSS3, Bootstrap, SASS,
-              WordPress, jQuery, Javascript as well as responsive design,
-              principles of web ergonomics and SEO. I also have basic knowledge
+              I have extensive knowledge of HTML5, CSS3, Bootstrap, SASS, WordPress, jQuery, Javascript as well as responsive design, principles of web ergonomics and SEO. I also have basic knowledge
               of React, Styled-Components and Angular JS.
             </p>
             <p>
-              I am looking to invest my professional experience, passion and
-              interpersonal skills in a company that is innovative, creative and
-              dynamic, where I can feel motivated to further my career.
+              I am looking to invest my professional experience, passion and interpersonal skills in a company that is innovative, creative and dynamic, where I can feel motivated to further my
+              career.
             </p>
           </div>
           <div class="wrapper">
             <h3 class="title">Conect</h3>
             <div class="wrapper__icon">
               <span class="icon icon--linkedin">
-                <a
-                  href="https://www.linkedin.com/in/tatiana-garrafa/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="LinkedIn"
-                >
-                  <img
-                    src="<%=require('./assets/images/linkedin.svg')%>"
-                    alt="LinkedIn Tatiana Garrafa"
-                  />
+                <a href="https://www.linkedin.com/in/tatiana-garrafa/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                  <img src="<%=require('./assets/images/linkedin.svg')%>" alt="LinkedIn Tatiana Garrafa" />
                 </a>
               </span>
               <span class="icon icon--github">
-                <a
-                  href="https://github.com/GarrafaTati"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Github"
-                >
-                  <img
-                    src="<%=require('./assets/images/github.svg')%>"
-                    alt="Github Tat Garrafa"
-                  />
+                <a href="https://github.com/GarrafaTati" target="_blank" rel="noopener noreferrer" title="Github">
+                  <img src="<%=require('./assets/images/github.svg')%>" alt="Github Tat Garrafa" />
                 </a>
               </span>
             </div>
@@ -75,51 +54,10 @@
           <div class="wrapper">
             <h3 class="title">Contact</h3>
             <span class="icon icon--email">
-              <a
-                href="mailto:tatiigarrafa@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Send me an e-mail"
-              >
-                <img
-                  src="<%=require('./assets/images/envelope.svg')%>"
-                  alt="Send me an e-mail"
-                />
+              <a href="mailto:tatiigarrafa@gmail.com" target="_blank" rel="noopener noreferrer" title="Send me an e-mail">
+                <img src="<%=require('./assets/images/envelope.svg')%>" alt="Send me an e-mail" />
               </a>
             </span>
-          </div>
-          <div class="wrapper">
-            <a
-              href="<%=require('./assets/pdf/cvTatianaGarrafa_en.pdf')%>"
-              target="_blank"
-              class="btn-circle-download"
-            >
-              <span class="btn__icon">
-                <svg
-                  id="arrow"
-                  width="14px"
-                  height="20px"
-                  viewBox="17 14 14 20"
-                >
-                  <path d="M24,15 L24,32"></path>
-                  <polyline points="30 27 24 33 18 27"></polyline>
-                </svg>
-                <svg
-                  id="check"
-                  width="21px"
-                  height="15px"
-                  viewBox="13 17 21 15"
-                >
-                  <polyline points="32.5 18.5 20 31 14.5 25.5"></polyline>
-                </svg>
-                <svg id="border" width="48px" height="48px" viewBox="0 0 48 48">
-                  <path
-                    d="M24,1 L24,1 L24,1 C36.7025492,1 47,11.2974508 47,24 L47,24 L47,24 C47,36.7025492 36.7025492,47 24,47 L24,47 L24,47 C11.2974508,47 1,36.7025492 1,24 L1,24 L1,24 C1,11.2974508 11.2974508,1 24,1 L24,1 Z"
-                  ></path>
-                </svg>
-              </span>
-              <span class="btn__txt">Donwload the CV</span>
-            </a>
           </div>
         </section>
         <section class="background">
@@ -181,10 +119,8 @@
               </div>
             </div>
             <div>
-              Other knowledge: Animation CSS, Design responsive, Foundation,
-              Impeka WordPress, ACF WordPress, Angular2, React,
-              Styled-components, PHP, Git, Sketch, Figma, methodology Agile
-              (Scrum), Jira, Mac and Pc environment.
+              Other knowledge: Animation CSS, Design responsive, Foundation, Impeka WordPress, ACF WordPress, Angular2, React, Styled-components, PHP, Git, Sketch, Figma, methodology Agile (Scrum),
+              Jira, Mac and Pc environment.
             </div>
           </div>
           <div class="lang progress-content">
@@ -193,18 +129,11 @@
               <div>
                 <h4>Portuguese</h4>
 
-                <div
-                  class="progress-bar progress-bar__circular progress-bar__circular--pt"
-                >
+                <div class="progress-bar progress-bar__circular progress-bar__circular--pt">
                   <div class="progress__container">
                     <svg class="progress__circle">
                       <circle cx="70" cy="70" r="70" />
-                      <circle
-                        class="svg_circle svg_circle--pt"
-                        cx="70"
-                        cy="70"
-                        r="70"
-                      />
+                      <circle class="svg_circle svg_circle--pt" cx="70" cy="70" r="70" />
                     </svg>
                     <div class="value-container">100%</div>
                   </div>
@@ -215,12 +144,7 @@
                 <div class="progress__container">
                   <svg class="progress__circle">
                     <circle cx="70" cy="70" r="70" />
-                    <circle
-                      class="svg_circle svg_circle--fr"
-                      cx="70"
-                      cy="70"
-                      r="70"
-                    />
+                    <circle class="svg_circle svg_circle--fr" cx="70" cy="70" r="70" />
                   </svg>
                   <div class="value-container">95%</div>
                 </div>
@@ -230,12 +154,7 @@
                 <div class="progress__container">
                   <svg class="progress__circle">
                     <circle cx="70" cy="70" r="70" />
-                    <circle
-                      class="svg_circle svg_circle--en"
-                      cx="70"
-                      cy="70"
-                      r="70"
-                    />
+                    <circle class="svg_circle svg_circle--en" cx="70" cy="70" r="70" />
                   </svg>
                   <div class="value-container">90%</div>
                 </div>
@@ -256,11 +175,8 @@
                       </header>
 
                       <p>
-                        All tasks related to interactive projects such as
-                        website, mobile application, multimedia presentation,
-                        newsletter, etc. Using WordPress, PHP, HTML 5, CSS 3,
-                        SASS, Angular, Javascript / JQuery. Newsletter
-                        integration. Image preparation and optimization.
+                        All tasks related to interactive projects such as website, mobile application, multimedia presentation, newsletter, etc. Using WordPress, PHP, HTML 5, CSS 3, SASS, Angular,
+                        Javascript / JQuery. Newsletter integration. Image preparation and optimization.
                       </p>
                     </div>
                   </div>
@@ -272,10 +188,7 @@
                         <h5>July 2019 - January 2022</h5>
                       </header>
 
-                      <p>
-                        Integration and management of content on the digital
-                        platform using HTML5, CSS3, SASS, JS, React and Angular.
-                      </p>
+                      <p>Integration and management of content on the digital platform using HTML5, CSS3, SASS, JS, React and Angular.</p>
                     </div>
                   </div>
                   <div class="timeline__item">
@@ -285,11 +198,7 @@
                         <h4>Reitmans Canada, Qc</h4>
                         <h5>October 2018 - July 2019</h5>
                       </header>
-                      <p>
-                        Content integration into the CMS (Salesforce CMS),
-                        optimization of the website experience, e-mail marketing
-                        integration
-                      </p>
+                      <p>Content integration into the CMS (Salesforce CMS), optimization of the website experience, e-mail marketing integration</p>
                     </div>
                   </div>
                   <div class="timeline__item">
@@ -300,10 +209,8 @@
                         <h5>April 2017 - October 2018</h5>
                       </header>
                       <p>
-                        Integration of websites in WordPress, preparation and
-                        optimization assets (visuals, sounds, animations, etc.),
-                        integrate the styles for web and mobile applications
-                        through the use of recent technologies like SASS
+                        Integration of websites in WordPress, preparation and optimization assets (visuals, sounds, animations, etc.), integrate the styles for web and mobile applications through the
+                        use of recent technologies like SASS
                       </p>
                     </div>
                   </div>
@@ -319,9 +226,7 @@
                 <div class="item__local">Practicum</div>
               </div>
               <div class="education__item">
-                <div class="item__name">
-                  Multimedia Integration Techniques | 2015
-                </div>
+                <div class="item__name">Multimedia Integration Techniques | 2015</div>
                 <div class="item__local">Maisonneuve College</div>
               </div>
               <div class="education__item">
@@ -329,9 +234,7 @@
                 <div class="item__local">Senac University Center</div>
               </div>
               <div class="education__item">
-                <div class="item__name">
-                  Communication - Specialty in Radio and TV | 2002
-                </div>
+                <div class="item__name">Communication - Specialty in Radio and TV | 2002</div>
                 <div class="item__local">Anhembi Morumbi University</div>
               </div>
             </div>
